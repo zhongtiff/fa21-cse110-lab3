@@ -1,0 +1,91 @@
+/* title section */
+h1{
+    text-align: center;
+    font-size: 10ex;
+    border: 5ch;
+    text-decoration: underline;
+    margin: auto;
+}
+header{
+    color:white;
+    background-color: black;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    position: static;
+}
+/* nav section */
+nav{
+    text-align: center;
+    font-size: 20pt;
+    word-spacing: 1mm;
+    padding: 3cm 1cm 3cm 1cm;
+    position: sticky;
+}
+.box{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+/* set font */
+@font-face {
+    font-family: "NotoSans";
+    src: url("Noto_Sans/NotoSans-Regular.ttf"), url("Noto_Sans/NotoSans-Italic.ttf"), url("Noto_Sans/NotoSans-Bold.ttf");
+    }
+
+body {
+    font-family: NotoSans;
+}
+
+.agenda{
+    margin: 2em 1em 2em 1em;
+    display: none;
+}
+
+.diagram{
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+.bus{
+    height: 200px;
+    width: 300px;
+    max-width: 350px;
+    max-height: 250px;
+}
+
+.flexer{
+    display: flex;
+}
+.flex1{
+    flex-grow: 5;
+    flex-shrink: 2;
+    flex-basis: auto;
+}
+
+.questions{
+    display: grid;
+}
+
+.q1{
+    grid-column-start: 4;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 5;
+}
+
+button:hover {
+    color:green;
+}
+button:active{
+    color: red;
+}
+
+@media screen and (min-width: 480px){
+    #leftsidebar {width: 150px; float: left;}
+}
