@@ -6,6 +6,11 @@ h1{
     text-decoration: underline;
     margin: auto;
 }
+
+li.bus{
+    text-align: center;
+}
+
 header{
     color:white;
     background-color: black;
@@ -35,11 +40,11 @@ nav{
     src: url("Noto_Sans/NotoSans-Regular.ttf"), url("Noto_Sans/NotoSans-Italic.ttf"), url("Noto_Sans/NotoSans-Bold.ttf");
     }
 
-body {
+* {
     font-family: NotoSans;
 }
 
-.agenda{
+#agenda{
     margin: 2em 1em 2em 1em;
     display: none;
 }
@@ -85,7 +90,32 @@ button:hover {
 button:active{
     color: red;
 }
-
+.diagram h2{
+    color: white;
+}
+.diagram{
+    background-color: black;
+}
 @media screen and (min-width: 480px){
     #leftsidebar {width: 150px; float: left;}
+}
+
+p{
+    color:red;
+}
+
+body[type="text"]{
+    text-align: left;
+}
+
+footer > p{
+    color:grey;
+}
+
+p + h2{
+    font-size: 5ex;
+}
+
+h1 ~ p{
+    font-weight: bold;
 }
